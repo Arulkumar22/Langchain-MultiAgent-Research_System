@@ -1,10 +1,10 @@
 from src.tools.tools import web_search,scrape_url
+from src.pipelines.pipline import run_research_pipeline
 
 # output=web_search("what is the capital of france")
 
 
-output=web_search.invoke("what is the latest research on using AI for climate change mitigation?")
+topic="the impact of AI on the job market in 2026"
 
-print(output)
-
+run_research_pipeline(topic)
 
